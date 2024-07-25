@@ -1,0 +1,134 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.description {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  margin: 1rem 0 2rem;
+}
+
+.form {
+  width: 100%;
+}
+
+.inputGroup {
+  margin-bottom: 1rem;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.fileInput,
+.textInput,
+.numberInput {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.submitButton,
+.refreshButton {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submitButton {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+.submitButton:hover {
+  opacity: 0.8;
+}
+
+.refreshButton {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.refreshButton:hover {
+  opacity: 0.8;
+}
+
+.error {
+  color: var(--error-color);
+  margin-top: 1rem;
+}
+
+.jobResults {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.jobTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.jobTable th,
+.jobTable td {
+  border: 1px solid var(--border-color);
+  padding: 8px;
+  text-align: left;
+}
+
+.jobTable th {
+  background-color: var(--secondary-color);
+}
+
+.darkModeToggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.darkModeToggle label {
+  margin-right: 10px;
+}
+
+.darkModeToggle input {
+  cursor: pointer;
+}
